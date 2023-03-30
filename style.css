@@ -1,0 +1,1053 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Jost:wght@300&family=Pacifico&family=Secular+One&family=Tomorrow&display=swap');
+body{
+    background-color: black;
+    color: white;
+    background: radial-gradient(ellipse closest-side at center,#112946 0,#0b1a2b 36%,#000 100%);
+    transition: opacity .3s ease-in-out;
+    padding-bottom: 100vh;
+    font-family: 'Acme', sans-serif;
+   font-family: 'Jost', sans-serif;
+   font-family: 'Pacifico', cursive;
+   font-family: 'Secular One', sans-serif;
+   font-family: 'Tomorrow', sans-serif;
+   
+}
+#fa{
+    text-align: center;
+   
+}
+main{
+    position: relative;
+    z-index: 9999;
+    padding: 50px 50px;
+    height: 100vh;
+}
+strong{
+    color: white;
+    background-color: red;
+}
+
+b{
+    background-color:yellow;
+    color: black;
+}
+@media only screen and (max-width:480px){
+   main{
+    padding: 10px 10px;
+   }
+}
+
+
+/* inicio header*/
+.logo{
+    z-index: 2;
+    position: absolute;
+    top: 25px;
+}
+@media only screen and (min-width:1400px){
+    .logo{
+        width: 750px;
+    }
+   
+}
+@media only screen and (max-width:480px) { 
+    .logo{
+        width: 100%;
+        position: absolute;
+    }
+    .promessa{
+        position: absolute;
+        top: 380px;
+        
+    }
+    .promessa p{
+        position: relative;
+        top: 40px;
+    }
+    #botao{
+        margin-top: 80px;
+    }
+}
+
+/* Video background*/
+#mobile{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    opacity: 40%;
+    
+}
+.video{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.video video {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+    
+}
+/* END Video background*/
+/* Titulo e subtitulo do cabecario*/
+.promessa{
+    position: absolute;
+    z-index: 3;
+    bottom: 15px;
+}
+.promessa h1{  
+   padding: 20px 20px;
+   text-align: center;
+   font-size: 35px;
+   text-shadow: 0px 0px 10px #1E87BB ;
+}
+.promessa p{  
+    margin-top: -30px;
+    text-align: center;
+    font-size: 17px;
+ }
+.btn{
+    animation: pulsante 1.5s alternate infinite;
+    background: #1E87BB none repeat scroll 0 0;
+    border: 1px solid #1E87BB;
+    border-radius: 2px;
+    box-shadow: 0px 0px 8px #1E87BB;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 12px 40px;
+    text-transform: uppercase;
+    transition: all 0.2s ease 0s;
+    border-radius: 15px;
+}
+.btn:hover,
+    .btn:focus {
+        background: #fff;
+        border: 1px solid #fff;
+        color: #1E87BB;
+    }
+#botao{
+    text-align: center;
+    position: relative;
+    top: 15px;
+}
+/* animação botão*/
+@keyframes pulsante {
+    0%{
+        transform: scale(1)
+    }
+    25%{
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    75%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }}
+    
+/* fim header*/
+
+/* inicio section como*/
+#como strong{
+    color: white;
+    background-color: red;
+}
+#como{
+    margin-top: 35px;
+}
+#como h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+#como h3{
+    text-align: center;
+    font-size: 30px;  
+    text-shadow: 0px 0px 10px #1E87BB ; 
+}
+
+#como b{
+    text-shadow: none;
+}
+
+#como h2{
+  width: 45%;
+    
+}
+img.atracao{
+    display: none;
+}
+/* mobile/telas grandes promessa*/
+
+
+@media only screen and (min-width:1400px){
+    #code{
+        margin-left: 400px;
+        margin-bottom: 400px;
+    
+    }
+    .como-funciona{
+        margin-top: 100px;
+    }
+}
+@media only screen and (max-width:480px){
+    #como h2{
+        width: 100%;
+        text-align: center;
+       
+    }
+   
+    img.atracao{
+        display: block;
+        width: 98%;
+    }
+    #code{
+        display: none;
+    }
+    video.code-mobile{
+        display: block;
+        width: 93%;
+        margin-left: 7px;
+        border-style: solid;
+        border-color: black;
+        
+    }
+    img.tv-mobile{
+        display: block;
+        position: absolute;
+        margin-left: 10px; 
+        width: 91%;
+    }
+    .como-funciona{
+        margin-top: 70px;
+    }
+    #como{
+        margin-top: 100px;
+    }
+    
+}
+@media only screen and (max-width:360px){
+    #como{
+        margin-top: 300px;
+    }
+}
+/* promessa*/
+#code{
+    position: absolute;
+    bottom: 60px;
+    left: 140px;
+}
+.code-mobile{
+    display: none;
+}
+.tv-mobile{
+    display: none;
+}
+.code{
+    width: 530px;
+    position: relative;
+    border-style: solid;
+    border-color: black;
+    right: 47px;
+    bottom: 50px;
+}
+.tv{
+    width: 550px;
+    position: relative;
+    left: 500px;
+   
+}
+
+.como-funciona{
+    
+    margin-top: 100px;
+}
+#como p{
+    text-align:center;
+    font-size: 20px;
+    line-height: 32px;
+}
+/* Mobile modelo de negócio*/
+@media only screen and (max-width:480px){
+    .pai{
+        flex-direction: column;
+    }
+    .idvisual{
+        
+        
+    }
+    .template-pronto{
+     position: relative;
+     top: 264px;
+    }
+    #como p{
+        line-height: 32px;
+    }
+    .canvas{
+        position: relative;
+        bottom: 700px;
+    }
+    .grana{
+        width: 100%;
+    }
+    .atrair{
+        display: none;
+    }
+    .logo-rato{
+       width: 100%;   
+    }
+    .btn-rat{
+       
+    }
+}
+@media only screen and (max-width:360px){
+    .canvas{
+        position: relative;
+        bottom: 770px;
+}
+/* modelo de negócio*/
+.pai{
+    display: flex; 
+    justify-content: space-around;
+    
+}
+.idvisual{
+    flex-basis: 45%;
+    box-shadow: 5px 5px 10px #1E87BB;
+}
+.template-pronto{
+    flex-basis: 45%;
+    box-shadow: 5px 5px 10px #1E87BB;
+}
+.canvas{
+    text-align: center;
+}
+/* fim modelo de negocio*/
+
+/* inicio maquina de fazer dinheiro*/
+@media only screen and (min-width:1400px){
+    .tempo-dinheiro{
+       justify-content: space-around;
+
+    }
+}
+
+.tempo-dinheiro{
+    display: flex;
+    width: 90%;
+    margin: auto; 
+}
+.sim{
+    text-align: center;
+    font-size: 29px;
+    line-height: 40px;
+    width: 90%;
+    margin: auto;
+    text-shadow: -2px -2px 5px #175e81;
+}
+.rat{
+    text-align: center;
+    margin-top: -60px;
+}
+
+#btn{
+    text-align: center;
+    margin-top: -70px;
+}
+.btn-rat{
+    animation: pulsante 1.5s alternate infinite;
+    background: #1E87BB none repeat scroll 0 0;
+    border: 1px solid #1E87BB;
+    border-radius: 2px;
+    box-shadow: 0px 0px 8px #1E87BB;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 12px 40px;
+    text-transform: uppercase;
+    transition: all 0.2s ease 0s;
+    border-radius: 15px;
+    
+}
+.btn-rat:hover,
+    .btn-rat:focus {
+        background: #fff;
+        border: 1px solid #fff;
+        color: #1E87BB;
+    }
+/* fim tempo e dinheiro*/
+
+/* fim section como*/
+
+/* inicio section pqr*/
+#pq{
+    margin-top: 150px;
+}
+
+#pq h1{
+    text-align: center;
+    font-size: 35px;
+    
+}
+#pq h2{
+    text-align: center;
+    font-size: 25px;
+}
+#pq h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0px 0px 10px #1E87BB ;
+}
+#vantagens{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px; 
+}
+#vantagens p{
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+}
+.vantagens{
+    border-style: solid;
+    border-color: #ffffff18;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-left: 20px;
+    box-shadow: 5px 5px 10px #1E87BB;
+    border-style: solid;
+    width: 350px;
+    margin-top: 35px;  
+    margin-bottom: 40px;
+}
+#vantagens-2{
+    display: flex;
+    flex-flow: wrap-reverse;
+    
+}
+#vantagens-2 h2{
+    width: 600px;
+    font-size: 30px;
+    position: relative;
+    top: 150px;
+    margin-top: -10px;
+}
+.time-money{
+    position: relative;
+    bottom: 100px;
+}
+@media only screen and (min-width:1400px){
+    #vantagens-2{
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+}
+@media only screen and (max-width:480px){
+    #vantagens{
+        flex-direction: column;
+        width: 100%;
+    }
+    .vantagens{
+        margin: auto;
+        margin-top: 35px;
+        width: 300px;
+    }
+    #pq h1{
+        font-size: 20px;
+    }
+    #pq h2.eua{
+        font-size: 20px;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    #vantagens-2{
+        flex-direction: column;
+        width: 100%;
+        flex-flow: wrap-reverse;
+    }
+    .time-money{
+        width: 100%;
+        position: relative;
+        top: 30px;
+        margin-top: -50px;
+    }
+    #vantagens-2 h2{
+        position: relative;
+        top: 0;
+        font-size: 30px;
+        text-align: ;
+    }
+}
+
+
+/* fim section pqr*/
+
+/* start tecnologiar*/
+#tecnologias{
+    background-color: rgba(255, 255, 255, 0.521);
+    margin-top: 40px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #ffffff7e , -5px -5px 10px #ffffff7e;
+}
+#tecnologias h1{
+text-align: center;
+   font-size: 35px;
+   text-shadow: 0px 0px 10px #1E87BB ;
+   color: #000;
+   padding-top: 20px;
+}
+.img-tecnologias{
+    width: 150px;
+    padding: 10px 10px;
+    padding-bottom: 20px;
+    margin-left: 25px;
+}
+.meio{
+    text-align: center;
+}
+/* end tecnologia*/
+
+
+/* start section the-best*/
+.btn-best{
+    text-align: center;
+    margin-top: -80px;
+    margin-bottom: 80px;
+}
+#the-best h1{
+    text-align: center;
+   font-size: 35px;
+   text-shadow: 0px 0px 10px #1E87BB ;
+}
+.galeria {
+    margin: 50px auto;
+    width: 50%;
+    height: 500px;
+   overflow: hidden;
+    position: relative;
+    
+  }
+  
+  .foto {
+    position: absolute;
+    animation: animacao infinite 16s;
+    opacity: 0;
+    width: 350px;
+    margin-left: 150px;
+    margin-top: 30px;
+    
+  }
+  .center{
+   
+  }
+  @keyframes animacao {
+    25% {
+      opacity: 1;
+         transform: scale(1.1,1.1);
+    }
+   50% {
+      opacity: 0;
+         
+    }
+  }
+  
+  .foto:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .foto:nth-child(2) {
+    animation-delay: 3s;
+  }
+  
+  .foto:nth-child(3) {
+    animation-delay: 6s;
+  }
+  
+  .foto:nth-child(4) {
+    animation-delay: 9s;
+  }
+
+  .foto:nth-child(5) {
+    animation-delay: 12s;
+  }
+
+  .foto:nth-child(6) {
+    animation-delay: 15s;
+  }
+  @media only screen and (min-width:1400px){
+    .galeria{
+       height: 100vh;
+       
+    }
+    .foto{
+        width: 100%;
+        margin: auto;
+    }
+    .btn-best{
+        margin-top: 50px;
+    }
+  }
+  @media only screen and (max-width: 480px){
+    .galeria {
+        width: 100%;
+        height: 50vh;
+        
+        
+      }
+      .foto{
+        margin: auto;
+        width: 100%;
+        
+      }
+      .btn-best{
+        margin-top: 10px;
+      }
+    }
+   
+ 
+
+/* end section the-best*/
+
+
+
+
+
+/* inicio section tecnologias*/
+.tecnologias{
+    border-style: solid;
+}
+/* fim section tecnologias*/
+
+
+
+
+/* inicio section servicos */
+#servicos h1{
+    text-align: center;
+    font-size: 35px;
+    
+}
+#servicos h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0px 0px 10px #1E87BB ;
+}
+.servicos{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+.work{
+    border-style: solid;
+    border-color: #ffffff18;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 35px;
+    width: 45%;
+    box-shadow: 5px 5px 10px #1E87BB;
+    padding: 10px 10px;
+    text-align: center;
+    
+}
+.acao{
+    text-align: center;
+  
+
+}
+@media only screen and (max-width:480px){
+    .servicos{
+        flex-direction: column;
+        
+    }
+    .work{
+        width: 90%;
+        margin-bottom: 40px;
+    }
+}
+
+/* fim section servicos */
+
+/* Trabalhos realizados */
+#trabalhos-realizados{
+    margin-top: 60px;
+    
+}
+#projetos{
+    display: flex;
+    justify-content: space-around;
+}
+#trabalhos-realizados h1{
+    text-align: center;
+      font-size: 35px;
+      text-shadow: 0px 0px 10px #1E87BB ;
+
+}
+.link{
+    border-style: solid;
+    width: 32%;
+    height: 230px;
+}
+.ftfundo{
+    width: 100%;
+    height: 100%;
+   
+}
+#trabalhos-realizados h3{
+    text-align: center;
+    font-size: 18px;
+      text-shadow: 0px 0px 10px #1E87BB ;
+}
+@media only screen and (min-width:1400px){
+    .link{
+        width: 25%;
+    }
+}
+@media only screen and (max-width:480px){
+    #projetos{
+        flex-direction: column;
+    }
+    .link{
+        width: 100%;
+        margin-top: 60px;
+    }
+}
+
+/* End---Trabalhos realizados */
+
+/* inicio section ofertas */
+#oferta h1{
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 0px 0px 10px #1E87BB ;
+}
+.valor-pacote{
+    margin-top: 150px;
+}
+.bonus{
+    display: flex;
+    justify-content: space-around;
+}
+.aproveite{
+    border-style: solid ;
+    width: 20%;
+    border-radius: 10px;
+    border-color: #ffffff65;
+    padding: 10px 10px;
+    box-shadow: 5px 5px 10px #feffff73;
+    line-height: 23px;
+    font-size: 15px;
+    background-color: #1e87bb49;
+    
+}
+#preco{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.neon{
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0px 0px 10px #1E87BB ;
+}
+.neon-2{
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0px 0px 10px #1E87BB ;
+}
+.pricing{
+    border-style: solid;
+    border-color: #1e87bb49;
+    box-shadow: 10px 10px 10px #feffff38;
+    width: 45%;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    background-color: #1e87bb49;
+    border-radius: 10px;
+}
+.btn-preco{
+    text-align: center;
+    
+}
+.explicacao{
+    text-align: center;
+    font-size: 20px;
+    width: 50%;
+    position: relative;
+    left: 300px;
+}
+.explicacao-2{
+    display: none;
+}
+@media only screen and (min-width:1400px){
+    .explicacao p{
+        position: relative;
+        left: 170px;
+    }
+    .alinhar{
+        margin-top: 60px;
+    }
+}
+@media only screen and (max-width:480px){
+    #preco{
+        flex-direction: column;
+    }
+    .bonus{
+        flex-direction: column;
+        
+    }
+    .aproveite{
+        width: 90%;
+        margin-top: 40px;
+    }
+    .explicacao{
+       display: none;
+    }
+    .explicacao-2{
+        display: block;
+        text-align: center;
+        font-size: 18px;
+    }
+    #preco{
+   flex-direction: column; 
+}
+    .pricing{
+        width: 90%;
+        margin-top: 50px;
+    }
+
+}
+
+/* end da seção oferta*/
+
+/*start faq*/
+#faq-1{
+    margin-top: 100px;
+}
+#faq-1 h1{
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 0px 0px 10px #1E87BB ;
+}
+div#faq{
+    width: 50%;
+    margin: auto;
+   
+}
+
+div#faq details{
+    text-align: center;
+    box-shadow: 5px 5px 10px #1E87BB;
+    
+}
+
+div#faq details summary{
+    background-color: ;
+    padding: 2%;
+   margin-top: 20px;
+   background-color: #1e87bb49;
+}
+
+div#faq details p{
+    padding: 2%;
+    transition: all 2s;
+    text-align: center;
+}
+
+@media only screen and (max-width: 480px){
+    body{
+        background-color: white;
+    }
+    div#faq {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    div#faq {
+        width: 100%;
+    }
+}
+
+/* end faq*/
+
+/*start testimonials*/
+#prova-social{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+#prova-social h1{
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 0px 0px 10px #1E87BB ;
+}
+#prova-social h2{
+    text-align: center;
+    text-shadow: 0px 0px 10px #1E87BB ;
+    
+}
+img.cliente{
+    width: 250px;
+   border: none;
+}
+#testmonials{
+    display: flex;
+   
+}
+.centro{
+   float: right;
+   margin-top: 20px;
+   margin-right: 20px;
+}
+.cliente{
+    width: 50%;
+    border-style: solid;
+    border-color: #ffffff00;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.521);
+}
+.cliente p{
+    text-align: left;
+    padding: 20px 10px;
+   font-size: 18px;
+    line-height: 25px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 480px){
+    #testmonials{
+        flex-direction: column;
+    }
+    .cliente{
+        width: 100%;
+    }
+    .centro{
+        float: none;
+        text-align: center;
+    }
+}
+/* end testimonials*/
+
+/* start it's me*/
+#its-me{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+#its-me h1{
+     text-align: center;
+    font-size: 35px;
+    text-shadow: 0px 0px 10px #1E87BB ;
+}
+#nos{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    
+}
+.logo-end{
+   
+    width: 45%;
+}
+.ultimo{
+    padding: 10px 10px;
+    text-align: center;
+    width: 50%;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+    top: 70px;
+    
+}
+.ultimo-btn{
+    text-align: center;
+}
+@media only screen and (min-width:1400px){
+    .ultimo{
+        position: relative;
+        top: 250px;
+    }
+}
+@media only screen and (max-width:480px){
+    #nos{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .logo-end{
+        width: 100%;
+    }
+    .ultimo{
+        width: 90%;
+        margin-top: -120px;
+    }
+    .ultimo-btn{
+        margin-top: 80px;
+    }
+}
+
+/* end it's me*/
+
+/* START FOOTER*/
+footer img{
+    width: 350px;
+    margin-top: -50px;
+}
+.rodape{
+    text-align: center;
+}
+footer p{
+    text-align: center;
+    margin-top: -50px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    color: #1e87bb00;
+}
+nav li{
+    -webkit-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+    color: #fff;
+    padding: 10px 10px;
+    display: block;
+}
+nav :hover,
+#navigation.navbar-fixed #main-menu ul li a:focus,
+ ul li a:hover,
+ ul li a:focus{
+	color: #1E87BB;
+}
+@media only screen and (max-width: 480px){
+    nav ul{
+        flex-direction: column;
+        padding: 10px 10px;
+
+    }
+   
+    nav a{
+        color: #1E87BB;
+    }
+  
+}
+/* END FOOTER*/
