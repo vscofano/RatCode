@@ -67,7 +67,12 @@ b{
     #botao{
         margin-top: 80px;
     }
-}
+   
+    }
+    hr{
+        display: none;
+    }
+
 
 /* Video background*/
 #mobile{
@@ -189,18 +194,33 @@ b{
 img.atracao{
     display: none;
 }
+
 /* mobile/telas grandes promessa*/
-
-
+@media only screen and (max-width:360px){
+    .id-como{
+        margin-top: 350px;
+    }
+    .canvas{
+       display: block;
+       position: relative;
+       top: -780px;
+    }
+    hr{
+        display: none;
+    }
+}
 @media only screen and (min-width:1400px){
     #code{
         margin-left: 400px;
         margin-bottom: 400px;
-    
+    }
+    hr{
+        display: none;
     }
     .como-funciona{
         margin-top: 100px;
     }
+    
 }
 @media only screen and (max-width:480px){
     #como h2{
@@ -233,15 +253,7 @@ img.atracao{
     .como-funciona{
         margin-top: 70px;
     }
-    #como{
-        margin-top: 100px;
-    }
     
-}
-@media only screen and (max-width:360px){
-    #como{
-        margin-top: 380px;
-    }
 }
 /* promessa*/
 #code{
@@ -270,14 +282,15 @@ img.atracao{
    
 }
 
-.como-funciona{
-    
-    margin-top: 100px;
-}
+
 #como p{
     text-align:center;
     font-size: 20px;
     line-height: 32px;
+}
+.como-funciona{
+    
+    margin-top: 100px;
 }
 /* Mobile modelo de negócio*/
 @media only screen and (max-width:480px){
@@ -297,7 +310,7 @@ img.atracao{
     }
     .canvas{
         position: relative;
-        bottom: 700px;
+        bottom: 590px;
     }
     .grana{
         width: 100%;
@@ -311,11 +324,6 @@ img.atracao{
     .btn-rat{
        
     }
-}
-@media only screen and (max-width:360px){
-    .canvas{
-        position: relative;
-        bottom: 770px;
 }
 /* modelo de negócio*/
 .pai{
