@@ -312,8 +312,7 @@ img.atracao{
         line-height: 32px;
     }
     .canvas{
-        position: relative;
-        bottom: 590px;
+        display: none;
     }
     .grana{
         width: 100%;
