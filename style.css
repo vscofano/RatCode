@@ -12,6 +12,134 @@ body{
    font-family: 'Tomorrow', sans-serif;
    
 }
+/* estrlas-fundo*/
+@media only screen and (max-width:480px) {
+    
+}
+
+.conteiner{
+    width: 100%;
+    position: fixed; }
+
+.stars{
+    position: relative;
+    animation: anime-stars 10s linear infinite;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    box-shadow: 50px 30px white,
+    100px 110px white,
+    200px 30px white,
+    15px 133px white,
+    333px 50px white,
+    444px 122px white,
+    75px 130px white,
+    500px 610px white,
+    600px 500px white,
+    75px 733px white,
+    833px 850px white,
+    944px 922px white,
+    1005px 1130px white,
+    1100px 610px white,
+    1250px 500px white,
+    1375px 733px white,
+    1333px 850px white,
+    1244px 922px white,
+    1305px 1130px white;
+    
+}
+.stars::after{
+    content: " ";
+    position: absolute;
+    top: 150px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    box-shadow: 50px 30px white,
+    100px 110px white,
+    200px 30px white,
+    15px 133px white,
+    333px 50px white,
+    444px 122px white,
+    75px 130px white,
+    500px 610px white,
+    600px 500px white,
+    75px 733px white,
+    833px 850px white,
+    944px 922px white,
+    1005px 1130px white,
+    1100px 610px white,
+    1250px 500px white,
+    1375px 733px white,
+    1333px 850px white,
+    1244px 922px white,
+    1305px 1130px white;
+    
+}
+.stars-2{
+    animation: anime-stars 30s linear infinite;
+    position: relative;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    box-shadow: 15px 15px white,
+    120px 100px white,
+    230px 40px white,
+    18px 33px white,
+    343px 80px white,
+    414px 22px white,
+    55px 180px white,
+    500px 610px white,
+    600px 500px white,
+    75px 733px white,
+    833px 850px white,
+    944px 922px white,
+    1005px 1130px white,
+    1100px 610px white,
+    1250px 500px white,
+    1375px 733px white,
+    1333px 850px white,
+    1244px 922px white,
+    1305px 1130px white;
+    
+}
+.stars-2::after{
+    content: " ";
+    position: absolute;
+    top: 200px;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    box-shadow: 15px 15px white,
+    120px 100px white,
+    230px 40px white,
+    18px 33px white,
+    343px 80px white,
+    414px 22px white,
+    55px 180px white,
+    500px 610px white,
+    600px 500px white,
+    75px 733px white,
+    833px 850px white,
+    944px 922px white,
+    1005px 1130px white,
+    1100px 610px white,
+    1250px 500px white,
+    1375px 733px white,
+    1333px 850px white,
+    1244px 922px white,
+    1305px 1130px white;
+}
+
+@keyframes anime-stars {
+    from{
+        transform: translatey(0px);
+    }
+    to{
+        transform: translateY(-150px);
+    }
+}
+/*end-estrelas-fundo */
 #fa{
     text-align: center;
    
@@ -24,7 +152,7 @@ main{
 }
 strong{
     color: white;
-    background-color: red;
+    background-color: #1E87BB;
 }
 
 b{
@@ -40,9 +168,7 @@ b{
 
 /* inicio header*/
 .logo{
-    z-index: 2;
-    position: absolute;
-    top: 25px;
+    text-align: center;
 }
 @media only screen and (min-width:1400px){
     .logo{
@@ -53,22 +179,18 @@ b{
 @media only screen and (max-width:480px) { 
     .logo{
         width: 100%;
-        position: absolute;
     }
     .promessa{
-        position: absolute;
-        top: 380px;
-        
+           
     }
     .promessa p{
-        position: relative;
-        top: 40px;
+       
     }
     #botao{
-        margin-top: 80px;
+      
     }
     .id-como{
-        margin-top: 150px;
+        margin-top: 50px;
     }
    
     }
@@ -77,38 +199,10 @@ b{
     }
 
 
-/* Video background*/
-#mobile{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    opacity: 40%;
-    
-}
-.video{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-}
-
-.video video {
-    position: static;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    z-index: 1;
-    
-}
-/* END Video background*/
 /* Titulo e subtitulo do cabecario*/
 .promessa{
-    position: absolute;
-    z-index: 3;
-    bottom: 15px;
+   position: relative;
+   bottom: 120px;
 }
 .promessa h1{  
    padding: 20px 20px;
@@ -122,7 +216,6 @@ b{
     font-size: 17px;
  }
 .btn{
-    animation: pulsante 1.5s alternate infinite;
     background: #1E87BB none repeat scroll 0 0;
     border: 1px solid #1E87BB;
     border-radius: 2px;
@@ -168,13 +261,7 @@ b{
 /* fim header*/
 
 /* inicio section como*/
-#como strong{
-    color: white;
-    background-color: red;
-}
-#como{
-    margin-top: 35px;
-}
+
 #como h1{
     text-align: center;
     font-size: 35px;
@@ -261,8 +348,8 @@ img.atracao{
 /* promessa*/
 #code{
     position: absolute;
-    bottom: 60px;
-    left: 140px;
+   bottom: 150px;
+   left: 150px;
 }
 .code-mobile{
     display: none;
@@ -292,8 +379,7 @@ img.atracao{
     line-height: 32px;
 }
 .como-funciona{
-    
-    margin-top: 100px;
+    margin-top: 180px;
 }
 /* Mobile modelo de negócio*/
 @media only screen and (max-width:480px){
@@ -305,8 +391,8 @@ img.atracao{
         
     }
     .template-pronto{
-     position: relative;
-     top: 264px;
+     margin-top: 80px;
+     margin-bottom: 50px;
     }
     #como p{
         line-height: 32px;
@@ -422,6 +508,14 @@ img.atracao{
     text-align: center;
     text-shadow: 0px 0px 10px #1E87BB ;
 }
+/*animação titulo e f-a*/
+.vantagens h3{
+    animation: pulsante 2.0s alternate infinite;
+}
+#fa{
+    animation: pulsante 2.0s alternate infinite;
+}
+/*fim da animação*/
 #vantagens{
     display: flex;
     justify-content: space-around;
@@ -432,6 +526,7 @@ img.atracao{
     font-size: 15px;
     line-height: 25px;
 }
+
 .vantagens{
     border-style: solid;
     border-color: #ffffff18;
@@ -477,7 +572,8 @@ img.atracao{
         width: 300px;
     }
     #pq h1{
-        font-size: 20px;
+        font-size: 30px;
+        margin-top: -30px;
     }
     #pq h2.eua{
         font-size: 20px;
@@ -537,6 +633,12 @@ text-align: center;
     text-align: center;
     margin-top: -80px;
     margin-bottom: 80px;
+    animation: pulsante 2.5s alternate infinite;
+}
+@media only screen and (max-width: 480px){
+    .btn-best{
+        animation: pulsante 1.5s alternate infinite;
+    }
 }
 #the-best h1{
     text-align: center;
@@ -749,9 +851,13 @@ text-align: center;
 .valor-pacote{
     margin-top: 150px;
 }
+.bonus h2 {
+    animation: pulsante 1.5s alternate infinite;
+}
 .bonus{
     display: flex;
     justify-content: space-around;
+    
 }
 .aproveite{
     border-style: solid ;
@@ -782,6 +888,10 @@ text-align: center;
     text-align: center;
     text-shadow: 0px 0px 10px #1E87BB ;
 }
+.animado{
+    animation: pulsante 1.5s alternate infinite;
+}
+
 .pricing{
     border-style: solid;
     border-color: #1e87bb49;
@@ -793,6 +903,7 @@ text-align: center;
     line-height: 40px;
     background-color: #1e87bb49;
     border-radius: 10px;
+    
 }
 .btn-preco{
     text-align: center;
@@ -844,7 +955,13 @@ text-align: center;
         width: 90%;
         margin-top: 50px;
     }
-
+    .bonus h2{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    h3,u{
+        animation: pulsante 1.5s alternate infinite;
+    }
 }
 
 /* end da seção oferta*/
@@ -989,6 +1106,7 @@ img.cliente{
 }
 .ultimo-btn{
     text-align: center;
+    animation: pulsante 3.5s alternate infinite;
 }
 @media only screen and (min-width:1400px){
     .ultimo{
@@ -1017,7 +1135,7 @@ img.cliente{
 
 /* START FOOTER*/
 footer img{
-    width: 350px;
+    width: 200px;
     margin-top: -50px;
 }
 .rodape{
@@ -1031,6 +1149,7 @@ footer p{
 nav ul{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 80px;
 }
 nav a{
     color: #1e87bb00;
